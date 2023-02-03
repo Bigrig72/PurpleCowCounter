@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import Button from "../UI/Button";
-import backgroundImage from "../../assets/FearlessBackground.jpg";
+import backgroundImage from "../../Assets/FearlessBackground.jpg";
 
 export default function AnimateText(props) {
   const enterAppHandler = () => {

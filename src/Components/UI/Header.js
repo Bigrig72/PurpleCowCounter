@@ -1,6 +1,7 @@
 import React from "react";
-import HeaderImage from "../../assets/HomePage.jpg";
+import HeaderImage from "../../Assets/HomePage.jpg";
 import styled from "styled-components";
+
 const Header = () => {
   return (
     <>

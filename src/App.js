@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import AnimateText from "./Components/animations/TextAnimation";
+import AnimateText from "./Components/Animations/TextAnimation";
 import Header from "./Components/UI/Header";
+import CounterSummary from "./Components/Counter/CounterSummary";
+import CounterWebsites from "./Components/Counter/CounterWebsites";
 
 function App() {
   const [enterApp, setEnterApp] = useState(false);
@@ -13,7 +15,13 @@ function App() {
     <>
       <div>
         {!enterApp && <AnimateText enterApp={enterAppHandler}></AnimateText>}
-        {enterApp && <Header></Header>}
+        {enterApp && (
+          <>
+            <Header></Header>
+            <CounterSummary></CounterSummary>
+            <CounterWebsites></CounterWebsites>
+          </>
+        )}
       </div>
     </>
   );

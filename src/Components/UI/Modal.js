@@ -1,12 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import Button from "../UI/Button";
+import Button from "./Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
 function BasicModal(props) {
   const [open, setOpen] = React.useState(true);
-
 
   const style = {
     position: "absolute",
@@ -22,10 +21,7 @@ function BasicModal(props) {
 
   return (
     <div>
-      <Modal
-        open={open}
-        onClose={setOpen(!open)}  
-      >
+      <Modal open={open} onClose={setOpen(!open)}>
         <Box sx={style}>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             {props.title}
